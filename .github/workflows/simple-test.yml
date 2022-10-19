@@ -1,4 +1,4 @@
-name: Simple test
+name: Simple Test
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
@@ -7,7 +7,6 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - uses: actions/checkout@v2 # Requried will all actions
-      - name: Checks HTML5
-          uses: Cyb3r-Jak3/html5validator-action@<latest version>
+      - uses: Cyb3r-Jak3/html5validator-action@<latest version>
           with:
             root: /
