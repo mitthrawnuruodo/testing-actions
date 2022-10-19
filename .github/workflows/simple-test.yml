@@ -6,7 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - uses: actions/checkout@v2 # Requried will all actions
-      - uses: Cyb3r-Jak3/html5validator-action@<latest version>
-          with:
-            root: /
+      #- uses: actions/checkout@v2 # Requried will all actions
+      - name: HTML5Validator
+        uses: Cyb3r-Jak3/html5validator-action
+        with:
+          root: /
