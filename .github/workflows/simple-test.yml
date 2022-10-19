@@ -7,7 +7,7 @@ jobs:
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - uses: actions/checkout@v2 # Requried will all actions
-      - name: HTML5Validator
-        uses: Cyb3r-Jak3/html5validator-action
+      - name: HTML5 Validator
+        uses: Cyb3r-Jak3/html5validator-action@v7.1.1
         with:
           root: /
